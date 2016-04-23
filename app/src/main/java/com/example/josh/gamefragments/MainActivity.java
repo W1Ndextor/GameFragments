@@ -14,9 +14,11 @@ public class MainActivity extends AppCompatActivity {
 
     boolean status1 = false;
     boolean status2 = false;
+    boolean status3 = false;
 
     Button bn1;
     Button bn2;
+    Button bn3;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,6 +26,9 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         bn1 = (Button)findViewById(R.id.bn1);
         bn2 =(Button)findViewById(R.id.bn2);
+        bn3 =(Button)findViewById(R.id.bn3);
+
+
         bn1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -69,6 +74,32 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
+
+
+        bn3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                android.support.v4.app.FragmentManager fragmentManager = getSupportFragmentManager();
+                android.support.v4.app.FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+
+                if(status3=true){
+
+                    SamusFragment sFrag1 = new SamusFragment();
+                    fragmentTransaction.add(R.id.fragment_container, sFrag1);
+                    fragmentTransaction.addToBackStack(null);
+                    //fragmentTransaction.add(R.id.fragment_container, mFrag1);
+                    fragmentTransaction.commit();
+                    //bn1.setText("Link");
+                    status1 = true;
+
+                }
+
+
+            }
+        });
+
+
     }
 
     // @Override
