@@ -42,7 +42,7 @@
         <Button
             android:layout_width="100dp"
             android:layout_height="wrap_content"
-            android:text="Samus"
+            android:text="Kirby"
             android:id="@+id/bn3"
             android:layout_column="3" />
     </TableRow>

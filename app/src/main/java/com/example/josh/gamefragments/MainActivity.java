@@ -1,12 +1,7 @@
 package com.example.josh.gamefragments;
 
-import android.app.Fragment;
-import android.app.FragmentManager;
-import android.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 
@@ -85,8 +80,8 @@ public class MainActivity extends AppCompatActivity {
 
                 if(status3=true){
 
-                    SamusFragment sFrag1 = new SamusFragment();
-                    fragmentTransaction.add(R.id.fragment_container, sFrag1);
+                    KirbyFragment kFrag1 = new KirbyFragment();
+                    fragmentTransaction.add(R.id.fragment_container, kFrag1);
                     fragmentTransaction.addToBackStack(null);
                     //fragmentTransaction.add(R.id.fragment_container, mFrag1);
                     fragmentTransaction.commit();
