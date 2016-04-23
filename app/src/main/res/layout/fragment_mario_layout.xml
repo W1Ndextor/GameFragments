@@ -9,6 +9,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Mario is Red"
-        android:textAppearance="?android:textAppearanceLarge" />
+        android:textAppearance="?android:textAppearanceLarge"
+        android:background="#ed0b0b"
+        android:textColor="#1722a5"
+        android:gravity="center"
+        android:height="120dp" />
 
 </FrameLayout>

@@ -2,13 +2,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="400dp"
-    tools:context="com.example.josh.gameinfo.MarioFragment">
+    tools:context="com.example.josh.gameinfo.LinkFragment">
 
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Link is green"
-        android:textAppearance="?android:textAppearanceLarge"/>
+        android:text="Link is Green"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:background="#0b9e00"
+        android:textColor="#ffe500"
+        android:gravity="center"
+        android:height="120dp" />
 
 </FrameLayout>
